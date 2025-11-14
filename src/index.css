@@ -1,0 +1,31 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+/* 2. Arahan Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Style global dari <style> HTML Anda */
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* untuk Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* untuk Chrome, Edge, Safari */
+}
+
+.animate-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
