@@ -10,11 +10,11 @@
 /* 3. Style global dari <style> HTML Anda */
 html {
     scroll-behavior: smooth;
-    scrollbar-width: none; /* untuk Firefox */
+    scrollbar-width: none;
 }
 
 html::-webkit-scrollbar {
-  display: none; /* untuk Chrome, Edge, Safari */
+  display: none;
 }
 
 .animate-section {

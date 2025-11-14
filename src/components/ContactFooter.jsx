@@ -1,4 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faYoutube, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
+
 
 function ContactFooter() {
   return (
@@ -26,15 +30,19 @@ function ContactFooter() {
             <h3 className="text-lg font-semibold text-white mb-4">Kontak Kami</h3>
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center">
-                <ion-icon name="location-outline" className="w-5 h-5 mr-3 flex-shrink-0"></ion-icon>
-                <span>Jl. Raya Putra Bangsa III No.2-A Blok A, Medokan Ayu, Rungkut, Surabaya, Jawa Timur 60295</span>
+                <FontAwesomeIcon icon={faLocationDot} className="w-5 h-5 mr-3 text-gray-400" />
+                <span>
+                  Jl. Raya Putra Bangsa III No.2-A Blok A, Medokan Ayu, Rungkut, Surabaya, Jawa Timur 60295
+                </span>
               </li>
+
               <li className="flex items-center">
-                <ion-icon name="mail-outline" className="w-5 h-5 mr-3 flex-shrink-0"></ion-icon>
+                <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5 mr-3 text-gray-400" />
                 <span>elmechcore@gmail.com</span>
               </li>
+
               <li className="flex items-center">
-                <ion-icon name="call-outline" className="w-5 h-5 mr-3 flex-shrink-0"></ion-icon>
+                <FontAwesomeIcon icon={faPhone} className="w-5 h-5 mr-3 text-gray-400" />
                 <span>+62 895-2613-2900</span>
               </li>
             </ul>
@@ -43,20 +51,32 @@ function ContactFooter() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Ikuti Kami</h3>
             <div className="flex space-x-4">
-              <a href="https://www.youtube.com/@elmech.technology" className="text-gray-400 hover:text-blue-400 transition duration-300">
+              <a
+                href="https://www.youtube.com/@elmech.technology"
+                className="text-gray-400 hover:text-blue-400 transition duration-300"
+              >
                 <span className="sr-only">Youtube</span>
-                <ion-icon name="logo-youtube" className="w-6 h-6"></ion-icon>
+                <FontAwesomeIcon icon={faYoutube} className="w-6 h-6" />
               </a>
-              <a href="https://www.instagram.com/elmech.technology/" className="text-gray-400 hover:text-blue-400 transition duration-300">
-                  <span className="sr-only">Instagram</span>
-                  <ion-icon name="logo-instagram" className="w-6 h-6"></ion-icon>
+
+              <a
+                href="https://www.instagram.com/elmech.technology/"
+                className="text-gray-400 hover:text-blue-400 transition duration-300"
+              >
+                <span className="sr-only">Instagram</span>
+                <FontAwesomeIcon icon={faInstagram} className="w-6 h-6" />
               </a>
-              <a href="https.tiktok.com/@elmech.technology" className="text-gray-400 hover:text-blue-400 transition duration-300">
-                  <span className="sr-only">Tiktok</span>
-                  <ion-icon name="logo-tiktok" className="w-6 h-6"></ion-icon>
+
+              <a
+                href="https://www.tiktok.com/@elmech.technology"
+                className="text-gray-400 hover:text-blue-400 transition duration-300"
+              >
+                <span className="sr-only">Tiktok</span>
+                <FontAwesomeIcon icon={faTiktok} className="w-6 h-6" />
               </a>
             </div>
           </div>
+
         </div>
       </div>
     </footer>
