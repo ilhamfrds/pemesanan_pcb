@@ -6,7 +6,7 @@ export const productList = [
     price: 325, 
     type: 'pertinak', 
     masking: 'no_masking', 
-    img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D&auto=format&fit=crop&w=1999&q=80' 
+    img: '/assest/image/PERTINAX/SINGLE LAYER TANPA MASKING.jpg' 
   },
   { 
     id: 2, 
@@ -15,7 +15,7 @@ export const productList = [
     price: 385, 
     type: 'pertinak', 
     masking: 'satu_sisi', 
-    img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D&auto=format&fit=crop&w=1999&q=80' 
+    img: '/assest/image/PERTINAX/SINGLE LAYER MASKING 1 SISI.jpg' 
   },
   { 
     id: 3, 
@@ -24,7 +24,7 @@ export const productList = [
     price: 445, 
     type: 'pertinak', 
     masking: 'dua_sisi', 
-    img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D&auto=format&fit=crop&w=1999&q=80' 
+    img: '/assest/image/PERTINAX/SINGLE LAYER MASKING 2 SISI.jpg' 
   },
   { 
     id: 4, 
@@ -33,7 +33,7 @@ export const productList = [
     price: 375, 
     type: 'fyber single layer', 
     masking: 'no_masking', 
-    img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D&auto=format&fit=crop&w=1999&q=80' 
+    img: '/assest/image/FYBER/SINGLE LAYER TANPA MASKING.jpg' 
   },
   { 
     id: 5, 
@@ -42,7 +42,7 @@ export const productList = [
     price: 435, 
     type: 'fyber single layer', 
     masking: 'satu_sisi', 
-    img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D&auto=format&fit=crop&w=1999&q=80' 
+    img: '/assest/image/FYBER/SINGLE LAYER MASKING 1 SISI.jpg' 
   },
   { 
     id: 6, 
@@ -51,7 +51,7 @@ export const productList = [
     price: 495, 
     type: 'fyber single layer', 
     masking: 'dua_sisi', 
-    img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D&auto=format&fit=crop&w=1999&q=80' 
+    img: '/assest/image/FYBER/SINGLE LAYER MASKING 2 SISI.jpg' 
   },
   { 
     id: 7, 
@@ -60,7 +60,7 @@ export const productList = [
     price: 450, 
     type: 'fyber double layer', 
     masking: 'no_masking', 
-    img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D&auto=format&fit=crop&w=1999&q=80' 
+    img: '/assest/image/FYBER/DOUBLE LAYER TANPA MASKING.jpg' 
   },
   { 
     id: 8, 
@@ -69,7 +69,7 @@ export const productList = [
     price: 510, 
     type: 'fyber double layer', 
     masking: 'satu_sisi', 
-    img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D&auto=format&fit=crop&w=1999&q=80' 
+    img: '/assest/image/FYBER/DOUBLE LAYER MASKING 1 SISI.jpg' 
  },
   { 
     id: 9, 
@@ -78,6 +78,6 @@ export const productList = [
     price: 570, 
     type: 'fyber double layer', 
     masking: 'dua_sisi', 
-    img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D&auto=format&fit=crop&w=1999&q=80' 
+    img: '/assest/image/FYBER/DOUBLE LAYER MASKING 2 SISI.jpg' 
   },
 ];
