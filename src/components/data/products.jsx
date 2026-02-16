@@ -28,7 +28,7 @@ export const productList = [
   },
   { 
     id: 4, 
-    title: "Fyber Single Layer", 
+    title: "Fiber Single Layer", 
     subTitle: "Tanpa Masking", 
     price: 375, 
     type: 'fyber single layer', 
@@ -37,7 +37,7 @@ export const productList = [
   },
   { 
     id: 5, 
-    title: "Fyber Single Layer", 
+    title: "Fiber Single Layer", 
     subTitle: "Masking Satu Sisi", 
     price: 435, 
     type: 'fyber single layer', 
@@ -46,7 +46,7 @@ export const productList = [
   },
   { 
     id: 6, 
-    title: "Fyber Single Layer", 
+    title: "Fiber Single Layer", 
     subTitle: "Masking Dua Sisi", 
     price: 495, 
     type: 'fyber single layer', 
@@ -55,7 +55,7 @@ export const productList = [
   },
   { 
     id: 7, 
-    title: "Fyber Double Layer", 
+    title: "Fiber Double Layer", 
     subTitle: "Tanpa Masking", 
     price: 450, 
     type: 'fyber double layer', 
@@ -64,7 +64,7 @@ export const productList = [
   },
   { 
     id: 8, 
-    title: "Fyber Double Layer", 
+    title: "Fiber Double Layer", 
     subTitle: "Masking Satu Sisi", 
     price: 510, 
     type: 'fyber double layer', 
@@ -73,7 +73,7 @@ export const productList = [
  },
   { 
     id: 9, 
-    title: "Fyber Double Layer", 
+    title: "Fiber Double Layer", 
     subTitle: "Masking Dua Sisi", 
     price: 570, 
     type: 'fyber double layer', 

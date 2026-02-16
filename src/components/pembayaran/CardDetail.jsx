@@ -20,7 +20,8 @@ function CardDetail({ data }) {
     'biru': 'Biru',
     'merah': 'Merah',
     'putih': 'Putih',
-    'hijau': 'Hijau'
+    'hijau': 'Hijau',
+    'hitam': 'Hitam'
   }
 
   const prioritasPenegrjaan = {

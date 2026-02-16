@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELMECH PCB</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .animate-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .upload-area.drag-over {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-blue-600">PCB<span class="text-gray-800">Elmech</span></a>
+                </div>
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#" class="font-medium text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="#layanan-grid" class="font-medium text-gray-600 hover:text-blue-600 transition duration-300">Pemesanan</a>
+                    <a href="#ketentuan" class="font-medium text-gray-600 hover:text-blue-600 transition duration-300">Ketentuan</a>
+                    <a href="#layanan-detail" class="font-medium text-gray-600 hover:text-blue-600 transition duration-300">Detail Produk</a>
+                    <a href="#kontak-section" class="font-medium text-gray-600 hover:text-blue-600 transition duration-300">Kontak</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="#" class="block px-4 py-3 text-sm text-gray-600">Home</a>
+            <a href="#layanan-grid" class="block px-4 py-3 text-sm text-gray-600">Pemesanan</a>
+            <a href="#ketentuan" class="block px-4 py-3 text-sm text-gray-600">Ketentuan</a>
+            <a href="#layanan-detail" class="block px-4 py-3 text-sm text-gray-600">Detail Layanan</a>
+            <a href="#kontak-section" class="block px-4 py-3 text-sm text-gray-600">Kontak</a>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen flex items-center justify-center bg-cover bg-center pt-16" style="background-image: url('https://images.unsplash.com/photo-1592237940191-3f1390bB93b0?auto=format&fit=crop&w=1974&q=80');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 text-center text-white p-8">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-section is-visible">Jasa Cetak PCB Murah</h1>
+            <p class="text-lg md:text-2xl mb-8 max-w-2xl mx-auto animate-section is-visible" style="transition-delay: 200ms;">Solusi manufaktur PCB berkualitas tinggi untuk prototipe dan produksi massal Anda.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="layanan-grid" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16 animate-section">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Layanan Cetak PCB Kami</h2>
+                    <p class="mt-4 text-lg text-gray-600">Pilih material dan finishing yang paling sesuai.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl animate-section">
+                        <img src="https://images.unsplash.com/photo-1588610266072-070b4530513c?auto=format&fit=crop&w=600&q=60" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">Pertinax Single Layer</h3>
+                            <p class="text-gray-500 text-sm font-semibold mb-2">Tanpa Masking</p>
+                            <p class="text-lg font-bold text-blue-600 my-5">Rp 325 / mm²</p>
+                            <a href="#" class="open-modal-button w-full text-center block bg-blue-600 text-white text-sm py-3 rounded-lg font-semibold hover:bg-blue-700">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden animate-section"><img src="https://images.unsplash.com/photo-1613904631215-f622359518b0?auto=format&fit=crop&w=600&q=60" class="w-full h-56 object-cover"><div class="p-6"><h3 class="text-xl font-bold">Pertinax Single Layer</h3><p class="text-gray-500 text-sm mb-2">Masking 1 Sisi</p><p class="text-lg font-bold text-blue-600 my-5">Rp 385 / mm²</p><a href="#" class="open-modal-button w-full text-center block bg-blue-600 text-white text-sm py-3 rounded-lg">Pesan Sekarang</a></div></div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden animate-section"><img src="https://images.unsplash.com/photo-1598450338603-c1791106c141?auto=format&fit=crop&w=600&q=60" class="w-full h-56 object-cover"><div class="p-6"><h3 class="text-xl font-bold">Pertinax Single Layer</h3><p class="text-gray-500 text-sm mb-2">Masking 2 Sisi</p><p class="text-lg font-bold text-blue-600 my-5">Rp 445 / mm²</p><a href="#" class="open-modal-button w-full text-center block bg-blue-600 text-white text-sm py-3 rounded-lg">Pesan Sekarang</a></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ketentuan" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16 animate-section">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Ketentuan Teknis & Contoh</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="animate-section">
+                        <h3 class="text-2xl font-semibold mb-4 border-b pb-2">Ketentuan Desain (WAJIB)</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><ion-icon name="checkmark-circle" class="text-blue-600 mr-2 mt-1"></ion-icon><span>Lebar Jalur: Min 0,5 mm</span></li>
+                            <li class="flex items-start"><ion-icon name="checkmark-circle" class="text-blue-600 mr-2 mt-1"></ion-icon><span>Pad/Vias: Hole min 0,6 mm</span></li>
+                            <li class="flex items-start"><ion-icon name="checkmark-circle" class="text-blue-600 mr-2 mt-1"></ion-icon><span>Space Trace: Min 0,35 mm</span></li>
+                            <li class="flex items-start"><ion-icon name="checkmark-circle" class="text-blue-600 mr-2 mt-1"></ion-icon><span>PDF Hitam Putih: No Mirror</span></li>
+                        </ul>
+                    </div>
+                    <div class="animate-section bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400">
+                        <h4 class="text-lg font-bold text-yellow-800 mb-2">Catatan Penting</h4>
+                        <p class="text-yellow-700 text-sm">Belum bisa PTH. Jika tidak mengikuti ketentuan, resiko ditanggung pemesan.</p>
+                    </div>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 animate-section">
+                    <img src="https://via.placeholder.com/600x600.png?text=Contoh+Desain+PCB+1" class="rounded shadow w-full aspect-square object-cover">
+                    <img src="https://via.placeholder.com/600x600.png?text=Contoh+Desain+PCB+2" class="rounded shadow w-full aspect-square object-cover">
+                    <div class="bg-blue-50 p-8 rounded flex flex-col items-center justify-center border border-blue-200">
+                        <ion-icon name="document-text" class="text-5xl text-blue-600 mb-4"></ion-icon>
+                        <h4 class="font-bold mb-4">Pricelist Lengkap</h4>
+                        <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Unduh PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak-section" class="py-20 bg-gray-50 border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16 animate-section">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Hubungi Kami</h2>
+                    <p class="mt-4 text-gray-600">Siap melayani konsultasi desain dan pesanan PCB Anda.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <div class="space-y-8 animate-section" style="transition-delay: 100ms;">
+                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-6">Informasi Kontak</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                        <ion-icon name="location-outline" class="text-2xl text-blue-600"></ion-icon>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Workshop & Kantor</p>
+                                        <p class="text-gray-600 leading-relaxed">Jl. Raya Putra Bangsa III No.2-A Blok A, Medokan Ayu, Rungkut, Surabaya, Jawa Timur 60295</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                        <ion-icon name="mail-outline" class="text-2xl text-blue-600"></ion-icon>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Email Resmi</p>
+                                        <a href="mailto:elmechcore@gmail.com" class="text-blue-600 hover:underline">elmechcore@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                        <ion-icon name="logo-whatsapp" class="text-2xl text-blue-600"></ion-icon>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">WhatsApp / Telepon</p>
+                                        <a href="https://wa.me/6289526132900" class="text-blue-600 hover:underline">+62 895-2613-2900</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-10 pt-8 border-t border-gray-100">
+                                <p class="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">Social Media Kami</p>
+                                <div class="flex space-x-4">
+                                    <a href="https://www.youtube.com/@elmech.technology" target="_blank" class="w-12 h-12 bg-red-50 text-red-600 flex items-center justify-center rounded-full hover:bg-red-600 hover:text-white transition-all duration-300">
+                                        <ion-icon name="logo-youtube" class="text-2xl"></ion-icon>
+                                    </a>
+                                    <a href="https://www.instagram.com/elmech.technology/" target="_blank" class="w-12 h-12 bg-pink-50 text-pink-600 flex items-center justify-center rounded-full hover:bg-pink-600 hover:text-white transition-all duration-300">
+                                        <ion-icon name="logo-instagram" class="text-2xl"></ion-icon>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@elmech.technology" target="_blank" class="w-12 h-12 bg-gray-100 text-black flex items-center justify-center rounded-full hover:bg-black hover:text-white transition-all duration-300">
+                                        <ion-icon name="logo-tiktok" class="text-2xl"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="animate-section h-full min-h-[400px] rounded-2xl overflow-hidden shadow-lg border border-gray-200" style="transition-delay: 300ms;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.385317769637!2d112.79374467590503!3d-7.3105740718817295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fac67104f053%3A0xe10433615175969c!2sMedokan%20Ayu%2C%20Rungkut%2C%20Surabaya%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2026 PCB Elmech Technology. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50 hidden" id="productModal">
+        <div id="modal-overlay" class="absolute inset-0"></div>
+        <div class="relative bg-white rounded-xl shadow-2xl w-full max-w-lg z-10 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center p-5 border-b">
+                <h3 id="modalProductName" class="text-xl font-bold">Konfigurasi Pesanan</h3>
+                <button class="modal-close text-3xl">&times;</button>
+            </div>
+            <div class="p-6">
+                <form id="productForm">
+                    <label class="block text-sm font-bold mb-2">Upload Gerber (.zip)</label>
+                    <label class="upload-area flex flex-col items-center justify-center w-full h-32 border-2 border-dashed rounded-lg cursor-pointer">
+                        <ion-icon name="cloud-upload" class="text-3xl text-gray-400"></ion-icon>
+                        <span id="fileName" class="text-xs text-gray-500 mt-2">Pilih File</span>
+                    </label>
+                    <input type="file" id="gerberFile" class="hidden">
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold mt-6">Proses Pesanan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            menuBtn.onclick = () => mobileMenu.classList.toggle('hidden');
+
+            const sections = document.querySelectorAll('.animate-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('is-visible'); });
+            }, { threshold: 0.1 });
+            sections.forEach(s => observer.observe(s));
+
+            const modal = document.getElementById('productModal');
+            document.querySelectorAll('.open-modal-button').forEach(btn => {
+                btn.onclick = (e) => {
+                    e.preventDefault();
+                    document.getElementById('modalProductName').innerText = btn.closest('.p-6').querySelector('h3').innerText;
+                    modal.classList.remove('hidden');
+                };
+            });
+            document.querySelector('.modal-close').onclick = () => modal.classList.add('hidden');
+            document.getElementById('modal-overlay').onclick = () => modal.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

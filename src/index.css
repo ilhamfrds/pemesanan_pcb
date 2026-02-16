@@ -7,16 +7,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 3. Style global dari <style> HTML Anda */
+/* 3. Style Scrollbar Minimalis (Baru) */
+@layer utilities {
+  /* Untuk Chrome, Safari, Edge, dan Opera */
+  ::-webkit-scrollbar {
+    @apply w-2; /* Lebar scrollbar 8px (cukup tipis) */
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent; /* Latar belakang track transparan */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full border-[2px] border-solid border-transparent bg-clip-content;
+    /* Penjelasan Trik di atas: 
+       - bg-clip-content + border-transparent membuat thumb terlihat 
+         memiliki "padding" atau jarak dari sisi kanan/kiri.
+       - Ini membuat efek scrollbar "mengambang" yang elegan.
+    */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400; /* Warna sedikit lebih gelap saat di-hover */
+  }
+}
+
+/* 4. Style global HTML */
 html {
     scroll-behavior: smooth;
-    scrollbar-width: none;
+    
+    /* Dukungan untuk Firefox (Firefox tidak menggunakan webkit) */
+    scrollbar-width: thin; 
+    scrollbar-color: #d1d5db transparent; /* Warna thumb (gray-300) & track (transparan) */
 }
 
-html::-webkit-scrollbar {
-  display: none;
-}
-
+/* Bagian animasi Anda tetap sama */
 .animate-section {
     opacity: 0;
     transform: translateY(30px);
@@ -27,5 +52,3 @@ html::-webkit-scrollbar {
     opacity: 1;
     transform: translateY(0);
 }
-
-

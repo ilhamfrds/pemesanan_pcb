@@ -34,7 +34,7 @@ function Pembayaran() {
   };
 
   return (
-    <div className="font-nunito bg-gray-100 min-h-screen p-4">
+    <div className="font-nunito bg-gray-100 min-h-screen">
       {loading ? (
         <LoadingScreen/>
       ) : (

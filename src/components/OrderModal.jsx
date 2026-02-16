@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { calculatePrices, formatRupiah } from '../utils/calculations';
 import Swal from 'sweetalert2';
-import NProgress from 'nprogress';
+import NProgress, { set } from 'nprogress';
 import 'nprogress/nprogress.css';
 
 function isNomorValid(nomor) {
@@ -25,15 +25,14 @@ function isNomorValid(nomor) {
   return s;
 }
 
-function OrderModal({ isOpen, onClose, product }) {
-
+function OrderModal({ isOpen, onClose, product, setting }) {
   const [nama, setNama] = useState('');
   const [nomor, setNomor] = useState('');
   const [panjang, setPanjang] = useState('');
   const [lebar, setLebar] = useState('');
   const [jumlah, setJumlah] = useState('');
-  const [prioritas, setPrioritas] = useState('');
-  const [pengambilan_barang, setPengambilan] = useState('');
+  const [prioritas, setPrioritas] = useState('normal');
+  const [pengambilan_barang, setPengambilan] = useState('ambil');
   
   const [jenis_pcb] = useState(product.type);
   const [tipeMasking] = useState(product.masking);
@@ -94,13 +93,9 @@ function OrderModal({ isOpen, onClose, product }) {
     let warnaMasking = '';
     if (warna_masking == 'biru') warnaMasking = 'Biru';
     else if (warna_masking == 'merah') warnaMasking = 'Merah';
-    else if (warna_masking == 'putih') warnaMasking = 'Putih';
+    else if (warna_masking == 'hitam') warnaMasking = 'Hitam';
     else if (warna_masking == 'hijau') warnaMasking = 'Hijau';
     else warnaMasking = 'Tidak Ada';
-
-    const pesan = `Nama: ${nama}\nUkuran: (PxL) ${panjang} x ${lebar} mm\nJenis PCB: ${product.title}\nMasking: ${product.subTitle}\nWarna Masking: ${warnaMasking}\nJumlah: cetak ${jumlah} pcs`;
-    const nomorTujuan = "6285546268982";
-    const url = `https://api.whatsapp.com/send?phone=${nomorTujuan}&text=${encodeURIComponent(pesan)}`;
 
     NProgress.start();
       Swal.fire({
@@ -122,6 +117,22 @@ function OrderModal({ isOpen, onClose, product }) {
       const result = await response.json();
 
       if (result.status === "success") {
+
+        const pesan =
+        "Halo Admin PCB👋✨\n\n" +
+        "Saya mau Order PCB dengan detail sebagai berikut:\n\n" +
+        `📌 Nama: ${nama}\n` +
+        `📐 Ukuran: ${panjang} mm × ${lebar} mm\n` +
+        `🧱 Jenis PCB: ${product.title}\n` +
+        `🎭 Masking: ${product.subTitle}\n` +
+        `🎨 Warna Masking: ${warnaMasking}\n` +
+        `📦 Jumlah: ${jumlah}\n` +
+        `🔗 Link: https://project.elmechtechnology.com/project/editpcbajuan/${result.uuid}\n\n` +
+        "Mohon untuk segera dikonfirmasi.\n" +
+        "Terima kasih 🙏✨";
+        const nomorTujuan = "6289526132900";
+        const url = `https://api.whatsapp.com/send?phone=${nomorTujuan}&text=${encodeURIComponent(pesan)}`;
+
         Swal.fire({
           title: 'Berhasil!',
           text: result.message,
@@ -189,10 +200,10 @@ function OrderModal({ isOpen, onClose, product }) {
                   <label htmlFor="warna_masking" className="block text-sm font-medium text-gray-700 mb-1">Warna Masking</label>
                   <select id="warna_masking" name="warna_masking" value={warna_masking} onChange={(e) => setWarnaMasking(e.target.value)} required className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                     <option hidden value="">-- Pilih Warna Masking --</option>
-                    <option value="biru">Biru</option>
-                    <option value="merah">Merah</option>
-                    <option value="putih">Putih</option>
-                    <option value="hijau">Hijau</option>
+                    <option disabled={setting.mask_biru === "0"} value="biru">Biru {setting.mask_biru === "0" ? "(Sedang Kosong)" : ""}</option>
+                    <option disabled={setting.mask_merah === "0"} value="merah">Merah {setting.mask_merah === "0" ? "(Sedang Kosong)" : ""}</option>
+                    <option disabled={setting.mask_hitam === "0"} value="hitam">Hitam {setting.mask_hitam === "0" ? "(Sedang Kosong)" : ""}</option>
+                    <option disabled={setting.mask_hijau === "0"} value="hijau">Hijau {setting.mask_hijau === "0" ? "(Sedang Kosong)" : ""}</option>
                   </select>
                 </div>
               </div>
@@ -204,10 +215,10 @@ function OrderModal({ isOpen, onClose, product }) {
                   <label htmlFor="warna_masking" className="block text-sm font-medium text-gray-700 mb-1">Warna Masking</label>
                   <select id="warna_masking" name="warna_masking" value={warna_masking} onChange={(e) => setWarnaMasking(e.target.value)} required className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                     <option hidden value="">-- Pilih Warna Masking --</option>
-                    <option value="biru">Biru</option>
-                    <option value="merah">Merah</option>
-                    <option value="putih">Putih</option>
-                    <option value="hijau">Hijau</option>
+                    <option disabled={setting.mask_biru === "0"} value="biru">Biru {setting.mask_biru === "0" ? "(Sedang Kosong)" : ""}</option>
+                    <option disabled={setting.mask_merah === "0"} value="merah">Merah {setting.mask_merah === "0" ? "(Sedang Kosong)" : ""}</option>
+                    <option disabled={setting.mask_hitam === "0"} value="hitam">Hitam {setting.mask_hitam === "0" ? "(Sedang Kosong)" : ""}</option>
+                    <option disabled={setting.mask_hijau === "0"} value="hijau">Hijau {setting.mask_hijau === "0" ? "(Sedang Kosong)" : ""}</option>
                   </select>
                 </div>
               </div>
@@ -256,15 +267,13 @@ function OrderModal({ isOpen, onClose, product }) {
               <div>
                 <label htmlFor="prioritas" className="block text-sm font-medium text-gray-700 mb-1">Prioritas</label>
                 <select id="prioritas" name="prioritas" value={prioritas} onChange={(e) => setPrioritas(e.target.value)} required className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                  <option hidden value="">-- Pilih Prioritas --</option>
                   <option value="normal">Reguler</option>
-                  <option value="urgent">Express (50% dari harga total)</option>
+                  <option disabled={setting.express === "0"} value="urgent">Express {setting.express === "0" ? "(Sedang Penuh)" : "(+50% dari harga Reguler)"}</option>
                 </select>
               </div>
               <div>
                 <label htmlFor="pengambilan_barang" className="block text-sm font-medium text-gray-700 mb-1">Pengambilan Barang</label>
                 <select id="pengambilan_barang" name="pengambilan_barang" value={pengambilan_barang} onChange={handlePengambilanChange} required className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                  <option hidden value="">-- Pilih Metode Pengambilan --</option>
                   <option value="ambil">Diambil Langsung</option>
                   <option value="kirim">Dikirim ke alamat Anda</option>
                 </select>

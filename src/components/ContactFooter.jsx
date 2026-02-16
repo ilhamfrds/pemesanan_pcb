@@ -6,7 +6,7 @@ import { faYoutube, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-i
 
 function ContactFooter() {
   return (
-    <footer id="kontak" className="bg-gray-900 text-gray-300 py-16">
+    <footer className="bg-gray-900 text-gray-300 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>

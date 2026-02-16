@@ -1,4 +1,5 @@
 import React from 'react'
+import { Toaster, toast } from "react-hot-toast";
 
 function Lokasi({data}) {
   let kota_tujuan = {};
@@ -18,12 +19,38 @@ function Lokasi({data}) {
   const provinsi = kota_tujuan.provinsi || "";
   const kode_pos = kota_tujuan.kode_pos || "";
 
+  const copyAlamat = () => {
+  const text = `
+Alamat : ${alamat}
+Kelurahan : ${kelurahan}
+Kecamatan : ${kecamatan}
+Kota/Kab : ${kota}
+Provinsi : ${provinsi}
+Kode Pos : ${kode_pos}
+`.trim();
+
+    navigator.clipboard.writeText(text)
+    .then(() => toast.success("Alamat berhasil disalin"))
+    .catch(() => toast.error("Gagal menyalin alamat"));
+  };
+
   return (
     <>
+        <Toaster position="top-right" />
         <hr className="border-t border-gray-200 my-7" />
-        <h2 className="text-2xl font-semibold text-gray-800 mb-5 flex items-center gap-3">
-            <i className="fa fa-map-pin text-blue-600" aria-hidden="true"></i>
-            Detail Pengiriman
+        <h2 className="text-2xl font-semibold text-gray-800 mb-5 flex items-center justify-between">
+            <span className="flex items-center gap-3">
+                <i className="fa fa-map-pin text-blue-600" aria-hidden="true"></i>
+                Detail Pengiriman
+            </span>
+
+            <i
+                className="fa fa-copy text-gray-400 cursor-pointer text-lg"
+                title="Salin alamat"
+                onClick={copyAlamat}
+                role="button"
+                aria-label="Salin alamat"
+            />
         </h2>
 
         <div className="grid grid-cols-12 gap-4">

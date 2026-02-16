@@ -6,7 +6,7 @@ import Lokasi from './pembayaran/Lokasi'
 function DetailPesanan({ data }) {
   return (
     <div>
-        <div className="max-w-6xl mx-auto py-12 px-2">
+        <div className="max-w-6xl mx-auto py-6 px-2">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
                 <div className="lg:col-span-7">
                     <div className="bg-white rounded-lg shadow-lg p-6">

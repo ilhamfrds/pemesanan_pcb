@@ -1,5 +1,6 @@
 import React from 'react';
 import AnimatedSection from './AnimatedSection';
+import { IoEyeOutline } from 'react-icons/io5';
 
 function Terms() {
   return (
@@ -53,6 +54,20 @@ function Terms() {
                 </div>
               </div>
             </div>
+          </AnimatedSection>
+        </div>
+
+        <div className="mb-16">
+          <AnimatedSection delay={250} className="flex justify-center">
+            <button 
+              onClick={() => {
+                window.open("/assest/files/Contoh File PDF.pdf", "_blank");
+              }}
+              className="group flex items-center gap-3 px-8 py-4 bg-slate-900 text-white font-bold rounded-2xl hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-blue-200 focus:outline-none"
+            >
+              <IoEyeOutline className="w-6 h-6 group-hover:scale-110 transition-transform" /> 
+              Lihat Contoh File PDF
+            </button>
           </AnimatedSection>
         </div>
 

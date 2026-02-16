@@ -1,5 +1,7 @@
 import React from 'react';
 import AnimatedSection from './AnimatedSection';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 function ProductCard({ product, onOrderClick, delay }) {
   const { title, subTitle, price, img } = product;
@@ -24,7 +26,10 @@ function ProductCard({ product, onOrderClick, delay }) {
           onClick={handleOrder}
           className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white text-sm py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 group"
         >
-          <ion-icon name="cart" className="w-5 h-5 transition-transform duration-300 group-hover:scale-110"></ion-icon>
+          <FontAwesomeIcon
+            icon={faShoppingCart}
+            className="transition-transform duration-300 group-hover:scale-110"
+          />
           Pesan Sekarang
         </a>
 
