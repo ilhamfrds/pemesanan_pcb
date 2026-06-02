@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faYoutube, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube, faInstagram, faTiktok, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 
 function ContactFooter() {
@@ -10,7 +10,7 @@ function ContactFooter() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <a href="#" className="text-2xl font-bold text-blue-400">PCB<span className="text-white">Elmech</span></a>
+            <a href="#" className="text-2xl font-bold text-blue-400">IDEA<span className="text-white">PCB</span></a>
             <p className="mt-4 text-gray-400">
               Solusi cetak PCB termurah untuk kebutuhan prototipe dan profesional.
             </p>
@@ -38,7 +38,7 @@ function ContactFooter() {
 
               <li className="flex items-center">
                 <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5 mr-3 text-gray-400" />
-                <span>elmechcore@gmail.com</span>
+                <span>ideapcb@gmail.com</span>
               </li>
 
               <li className="flex items-center">
@@ -52,15 +52,15 @@ function ContactFooter() {
             <h3 className="text-lg font-semibold text-white mb-4">Ikuti Kami</h3>
             <div className="flex space-x-4">
               <a
-                href="https://www.youtube.com/@elmech.technology"
+                href="https://www.facebook.com/share/1D2e4SDSdC/?mibextid=wwXIfr"
                 className="text-gray-400 hover:text-blue-400 transition duration-300"
               >
-                <span className="sr-only">Youtube</span>
-                <FontAwesomeIcon icon={faYoutube} className="w-6 h-6" />
+                <span className="sr-only">Facebook</span>
+                <FontAwesomeIcon icon={faFacebook} className="w-6 h-6" />
               </a>
 
               <a
-                href="https://www.instagram.com/elmech.technology/"
+                href="https://www.instagram.com/ideapcb/"
                 className="text-gray-400 hover:text-blue-400 transition duration-300"
               >
                 <span className="sr-only">Instagram</span>
@@ -68,7 +68,7 @@ function ContactFooter() {
               </a>
 
               <a
-                href="https://www.tiktok.com/@elmech.technology"
+                href="https://www.tiktok.com/@idea.pcb"
                 className="text-gray-400 hover:text-blue-400 transition duration-300"
               >
                 <span className="sr-only">Tiktok</span>

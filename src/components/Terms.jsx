@@ -61,7 +61,7 @@ function Terms() {
           <AnimatedSection delay={250} className="flex justify-center">
             <button 
               onClick={() => {
-                window.open("/assest/files/Contoh File PDF.pdf", "_blank");
+                window.open("/assets/files/Contoh File PDF.pdf", "_blank");
               }}
               className="group flex items-center gap-3 px-8 py-4 bg-slate-900 text-white font-bold rounded-2xl hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-blue-200 focus:outline-none"
             >
@@ -81,15 +81,15 @@ function Terms() {
               <h4 className="text-xl font-semibold text-center mb-4">Single Layer</h4>
               <div className="grid grid-cols-3 gap-4">
                 <div>
-                  <img src="/assest/pcb/single_silk.png" alt="Contoh Silk Single Layer" className="rounded shadow w-full aspect-square object-cover border" />
+                  <img src="/assets/pcb/single_silk.png" alt="Contoh Silk Single Layer" className="rounded shadow w-full aspect-square object-cover border" />
                   <p className="text-center text-xs md:text-sm mt-2 text-gray-600">Silk Layer (TOP)</p>
                 </div>
                 <div>
-                  <img src="/assest/pcb/single_copper.png" alt="Contoh Bottom Single Layer" className="rounded shadow w-full aspect-square object-cover border" />
+                  <img src="/assets/pcb/single_copper.png" alt="Contoh Bottom Single Layer" className="rounded shadow w-full aspect-square object-cover border" />
                   <p className="text-center text-xs md:text-sm mt-2 text-gray-600">Copper Layer (BOTTOM)</p>
                 </div>
                 <div>
-                  <img src="/assest/pcb/single_solder_mask.png" alt="Contoh Solder Mask TOP" className="rounded shadow w-full aspect-square object-cover border" />
+                  <img src="/assets/pcb/single_solder_mask.png" alt="Contoh Solder Mask TOP" className="rounded shadow w-full aspect-square object-cover border" />
                   <p className="text-center text-xs md:text-sm mt-2 text-gray-600">Solder Mask</p>
                 </div>
               </div>
@@ -99,19 +99,19 @@ function Terms() {
               <h4 className="text-xl font-semibold text-center mb-4">Double Layer</h4>
               <div className="grid grid-cols-4 gap-4">
                 <div>
-                  <img src="/assest/pcb/double_silk.png" alt="Contoh Silk Double Layer" className="rounded shadow w-full aspect-square object-cover border" />
+                  <img src="/assets/pcb/double_silk.png" alt="Contoh Silk Double Layer" className="rounded shadow w-full aspect-square object-cover border" />
                   <p className="text-center text-xs md:text-sm mt-2 text-gray-600">Silk Layer (TOP)</p>
                 </div>
                 <div>
-                  <img src="/assest/pcb/double_copper_top.png" alt="Contoh Top Double Layer" className="rounded shadow w-full aspect-square object-cover border" />
+                  <img src="/assets/pcb/double_copper_top.png" alt="Contoh Top Double Layer" className="rounded shadow w-full aspect-square object-cover border" />
                   <p className="text-center text-xs md:text-sm mt-2 text-gray-600">Copper Layer (TOP)</p>
                 </div>
                 <div>
-                  <img src="/assest/pcb/double_copper_bot.png" alt="Contoh Bottom Double Layer" className="rounded shadow w-full aspect-square object-cover border" />
+                  <img src="/assets/pcb/double_copper_bot.png" alt="Contoh Bottom Double Layer" className="rounded shadow w-full aspect-square object-cover border" />
                   <p className="text-center text-xs md:text-sm mt-2 text-gray-600">Copper Layer (BOTTOM)</p>
                 </div>
                 <div>
-                  <img src="/assest/pcb/double_solder_mask.png" alt="Contoh Solder Mask TOP" className="rounded shadow w-full aspect-square object-cover border" />
+                  <img src="/assets/pcb/double_solder_mask.png" alt="Contoh Solder Mask TOP" className="rounded shadow w-full aspect-square object-cover border" />
                   <p className="text-center text-xs md:text-sm mt-2 text-gray-600">Solder Mask</p>
                 </div>
               </div>
@@ -124,23 +124,23 @@ function Terms() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-2 border-b">
                     <span className="text-gray-700">Single Layer FR1 (Pertinax)</span>
-                    <span className="font-semibold text-blue-600">Rp 325 / cm²</span>
+                    <span className="font-semibold text-blue-600">Rp 350 / cm²</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b">
                     <span className="text-gray-700">Single Layer FR4 (Fiber)</span>
-                    <span className="font-semibold text-blue-600">Rp 375 / cm²</span>
+                    <span className="font-semibold text-blue-600">Rp 400 / cm²</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b">
                     <span className="text-gray-700">Double Layer FR4 (Fiber)</span>
-                    <span className="font-semibold text-blue-600">Rp 450 / cm²</span>
+                    <span className="font-semibold text-blue-600">Rp 475 / cm²</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b">
                     <span className="text-gray-700">Masking Bawah atau Atas (1 Sisi)</span>
-                    <span className="font-semibold text-blue-600">+ Rp 60 / cm²</span>
+                    <span className="font-semibold text-blue-600">+ Rp 150 / cm²</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
                     <span className="text-gray-700">Masking Bawah dan Atas (2 Sisi)</span>
-                    <span className="font-semibold text-blue-600">+ Rp 120 / cm²</span>
+                    <span className="font-semibold text-blue-600">+ Rp 300 / cm²</span>
                 </div>
             </div>
 
@@ -149,7 +149,7 @@ function Terms() {
                 <ul className="list-disc list-inside space-y-2">
                     <li>Jika ukuran kurang dari luas 100 cm² akan terkena biaya minimal pemesanan.</li>
                     <li>Harga cetak PCB sesuai dengan luas dari desainnya, sudah termasuk lapisan soldering & proteksi.</li>
-                    <li>Jika pesan secara online, terkena biaya cetak karkir film Rp 5K (A4), Rp 10K (A3).</li>
+                    <li>Jika pesan secara online, terkena biaya cetak karkir film Rp 7K (A4), Rp 14K (A3).</li>
                 </ul>
             </div>
             </div>

@@ -27,7 +27,7 @@ function ProductDetails() {
           
           {/* Item 1 */}
           <AnimatedSection className="flex flex-col md:flex-row gap-12 items-center mb-12">
-            <img src="/assest/image/PERTINAX/SINGLE LAYER TANPA MASKING.jpg" alt="Pertinax Single Layer Tanpa Masking" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
+            <img src="/assets/image/PERTINAX/SINGLE LAYER TANPA MASKING.jpg" alt="Pertinax Single Layer Tanpa Masking" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
             <div className="md:w-1/2">
               <h4 className="text-2xl font-bold text-gray-900">Pertinax Single Layer (Tanpa Masking)</h4>
               <p className="text-gray-600 my-4">Pilihan paling ekonomis untuk prototipe cepat dan sirkuit sederhana. Ideal untuk proyek hobi atau edukasi di mana biaya adalah prioritas utama.</p>
@@ -42,7 +42,7 @@ function ProductDetails() {
 
           {/* Item 2 */}
           <AnimatedSection className="flex flex-col md:flex-row-reverse gap-12 items-center mb-12">
-            <img src="/assest/image/PERTINAX/SINGLE LAYER MASKING 1 SISI.jpg" alt="Pertinax Single Layer Masking Satu Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
+            <img src="/assets/image/PERTINAX/SINGLE LAYER MASKING 1 SISI.jpg" alt="Pertinax Single Layer Masking Satu Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
             <div className="md:w-1/2">
               <h4 className="text-2xl font-bold text-gray-900">Pertinax Single Layer (Masking Satu Sisi)</h4>
               <p className="text-gray-600 my-4">Menambahkan lapisan pelindung solder mask di satu sisi (biasanya sisi bawah / jalur) untuk mencegah korosi dan memudahkan penyolderan.</p>
@@ -57,7 +57,7 @@ function ProductDetails() {
           
           {/* Item 3 */}
           <AnimatedSection className="flex flex-col md:flex-row gap-12 items-center mb-12">
-            <img src="/assest/image/PERTINAX/SINGLE LAYER MASKING 2 SISI.jpg" alt="Fyber Single Layer Masking Dua Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
+            <img src="/assets/image/PERTINAX/SINGLE LAYER MASKING 2 SISI.jpg" alt="Fyber Single Layer Masking Dua Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
             <div className="md:w-1/2">
               <h4 className="text-2xl font-bold text-gray-900">Pertinax Single Layer (Masking Dua Sisi)</h4>
               <p className="text-gray-600 my-4">Perlindungan penuh di kedua sisi board, memberikan tampilan lebih profesional dan durabilitas ekstra.</p>
@@ -81,7 +81,7 @@ function ProductDetails() {
           
           {/* Item 1 */}
           <AnimatedSection className="flex flex-col md:flex-row-reverse gap-12 items-center mb-12">
-            <img src="/assest/image/FYBER/SINGLE LAYER TANPA MASKING.jpg" alt="Fyber Single Layer Tanpa Masking" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
+            <img src="/assets/image/FYBER/SINGLE LAYER TANPA MASKING.jpg" alt="Fyber Single Layer Tanpa Masking" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
             <div className="md:w-1/2">
               <h4 className="text-2xl font-bold text-gray-900">Fiber Single Layer (Tanpa Masking)</h4>
               <p className="text-gray-600 my-4">Menggunakan material FR4 (Fiber) yang jauh lebih kuat, kaku, dan tahan panas dibanding Pertinax. Pilihan standar industri untuk prototipe berkualitas.</p>
@@ -96,7 +96,7 @@ function ProductDetails() {
 
           {/* Item 2 */}
           <AnimatedSection className="flex flex-col md:flex-row gap-12 items-center mb-12">
-            <img src="/assest/image/FYBER/SINGLE LAYER MASKING 1 SISI.jpg" alt="Fyber Single Layer Masking Satu Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
+            <img src="/assets/image/FYBER/SINGLE LAYER MASKING 1 SISI.jpg" alt="Fyber Single Layer Masking Satu Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
             <div className="md:w-1/2">
               <h4 className="text-2xl font-bold text-gray-900">Fiber Single Layer (Masking Satu Sisi)</h4>
               <p className="text-gray-600 my-4">Kombinasi material FR4 yang kuat dengan lapisan pelindung Solder Mask untuk perakitan yang mudah.</p>
@@ -111,7 +111,7 @@ function ProductDetails() {
           
           {/* Item 3 */}
           <AnimatedSection className="flex flex-col md:flex-row-reverse gap-12 items-center mb-12">
-            <img src="/assest/image/FYBER/SINGLE LAYER MASKING 2 SISI.jpg" alt="Fyber Single Layer Masking Dua Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
+            <img src="/assets/image/FYBER/SINGLE LAYER MASKING 2 SISI.jpg" alt="Fyber Single Layer Masking Dua Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
             <div className="md:w-1/2">
               <h4 className="text-2xl font-bold text-gray-900">Fiber Single Layer (Masking Dua Sisi)</h4>
               <p className="text-gray-600 my-4">Layanan standar industri yang paling umum. Memberikan proteksi penuh di kedua sisi board (meskipun jalur hanya 1 sisi).</p>
@@ -135,7 +135,7 @@ function ProductDetails() {
           
           {/* Item 1 */}
           <AnimatedSection className="flex flex-col md:flex-row gap-12 items-center mb-12">
-            <img src="/assest/image/FYBER/DOUBLE LAYER TANPA MASKING.jpg" alt="Fyber Double Layer Tanpa Masking" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
+            <img src="/assets/image/FYBER/DOUBLE LAYER TANPA MASKING.jpg" alt="Fyber Double Layer Tanpa Masking" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
             <div className="md:w-1/2">
               <h4 className="text-2xl font-bold text-gray-900">Fiber Double Layer (Tanpa Masking)</h4>
               <p className="text-gray-600 my-4">Untuk sirkuit kompleks yang membutuhkan routing di kedua sisi. Opsi "tanpa masking" cocok untuk prototipe cepat di mana modifikasi jalur mungkin diperlukan.</p>
@@ -151,7 +151,7 @@ function ProductDetails() {
 
           {/* Item 2 */}
           <AnimatedSection className="flex flex-col md:flex-row-reverse gap-12 items-center mb-12">
-            <img src="/assest/image/FYBER/DOUBLE LAYER MASKING 1 SISI.jpg" alt="Fyber Double Layer Masking Satu Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
+            <img src="/assets/image/FYBER/DOUBLE LAYER MASKING 1 SISI.jpg" alt="Fyber Double Layer Masking Satu Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
             <div className="md:w-1/2">
               <h4 className="text-2xl font-bold text-gray-900">Fiber Double Layer (Masking Satu Sisi)</h4>
               <p className="text-gray-600 my-4">Layanan khusus jika Anda hanya membutuhkan proteksi di satu sisi (misal, sisi Top), sementara sisi Bottom dibiarkan terekspos.</p>
@@ -167,7 +167,7 @@ function ProductDetails() {
           
           {/* Item 3 */}
           <AnimatedSection className="flex flex-col md:flex-row gap-12 items-center mb-12">
-            <img src="/assest/image/FYBER/DOUBLE LAYER MASKING 2 SISI.jpg" alt="Fyber Double Layer Masking Dua Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
+            <img src="/assets/image/FYBER/DOUBLE LAYER MASKING 2 SISI.jpg" alt="Fyber Double Layer Masking Dua Sisi" className="w-full md:w-1/2 rounded-lg shadow-xl aspect-video object-cover" />
             <div className="md:w-1/2">
               <h4 className="text-2xl font-bold text-gray-900">Fiber Double Layer (Masking Dua Sisi)</h4>
               <p className="text-gray-600 my-4">Kualitas terbaik untuk produk profesional. Proteksi penuh di kedua sisi atas dan bawah untuk sirkuit yang paling kompleks.</p>

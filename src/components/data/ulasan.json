@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "author_name": "Wahyu agung Wicaksono",
+    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWW3zEgA6vIIH7Zznw7vK0KalgYGlytxfElGR9iFPbtusRJLw=w36-h36-p-rp-mo-br100",
+    "rating": 5,
+    "text": "Respon admin sangat baik, banyak pertanyaan juga dijawab dengan baik dan bisa diajak diskusi juga, untuk hasil cetak sangat memuaskan."
+  },
+  {
+    "id": 2,
+    "author_name": "Moch hanif Arifin",
+    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVKo5zfg6RkuyeFDQVxnyyedWMQXDFpKrW1avNQDXSf_wdMkMDU=w36-h36-p-rp-mo-br100",
+    "rating": 5,
+    "text": "Pengerjaannya rapih presisi, adminnya ramah dan bisa konsultasi dulu sebelum cetak pcb👍🏻👍🏻"
+  },
+  {
+    "id": 3,
+    "author_name": "Fathuddin Afdil",
+    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVm0ZYxNr8ShlMmErqHCpuhfcVI2HJAVaaBKAvhMBkNwXpAnXLc=w36-h36-p-rp-mo-br100",
+    "rating": 5,
+    "text": "hasilnya bagus, walau ada trouble di desain / pdf yg saya kirim tapi dicarikan solusinya."
+  },
+  {
+    "id": 4,
+    "author_name": "Sayyid ali Imron",
+    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUdZZsFx5L30bjY0ne14JxoLQr2yQ-OWFanXNHH6sVTzfKH4QYl=w36-h36-p-rp-mo-br100",
+    "rating": 5,
+    "text": "mantap hasil sangat memuaskan bisa pesen buat disini gassinaja"
+  },
+  {
+    "id": 5,
+    "author_name": "Herry wahyu Saktiawan",
+    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX1DZygOXj5muG-OAijBVn7qwxbI9YQx1LHYPcLAv0huFrj3Wp7=w36-h36-p-rp-mo-ba3-br100",
+    "rating": 5,
+    "text": "Mantap, keren cetak disini bagus hasilnya👍👍👍👍"
+  },
+  {
+    "id": 6,
+    "author_name": "Donny",
+    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXk-dh_g65FT8-YaBaLXQgq5JscWFWI35Cmgz25fAfj6ZheZmXA=w36-h36-p-rp-mo-br100",
+    "rating": 5,
+    "text": "cetak PCB elmech joss, bisa masking pcb dengan request warna, harga terjangkau, kualitas jalur PCB ok banget. recommended bgt, mantap👍🏻"
+  },
+  {
+    "id": 7,
+    "author_name": "saikhul imam",
+    "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIdaQRu-ApNT44ro3I-lZ9cAxpPwdUMSpP1MvzhDVcXvN3k=w36-h36-p-rp-mo-br100",
+    "rating": 5,
+    "text": "Hasil cetaknya bagus, halus, jalurnya tegas dan cepat selesai. Holenya presisi, admin komunikatif, sopan dan bertanggungjawab. Sukses selalu Elmech, lain kali cetak lagi disini..👍"
+  },
+  {
+    "id": 8,
+    "author_name": "Andi Muhammad Alim Al Muhaimin",
+    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVI8QB2o9jRTm9kB0oCxyH0BHZnfotpcX-U2iEbERoleWibcosk=w36-h36-p-rp-mo-br100",
+    "rating": 5,
+    "text": "Hasilnya cetaknya bagus dan memuaskan"
+  },
+  {
+    "id": 9,
+    "author_name": "Setya",
+    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVoMgjux0766AE0CHKBESydnJ3iUcI5fLcjmMAUG5tgzGIXdRN8=w36-h36-p-rp-mo-ba3-br100",
+    "rating": 5,
+    "text": "Kualitasnya bagus, tau Elmech Technology dari teman dekat. Pasti cetak Printed Circuit Board di sini lg"
+  },
+  {
+    "id": 10,
+    "author_name": "Moch Raditya P.",
+    "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXe3bD435aiAfGOtpSSFsRkJnZZ3a1ktpoX2lGRsHBMRaEJnFJl=w36-h36-p-rp-mo-br100",
+    "rating": 5,
+    "text": "Cetak PCB terbaik di surabaya, pembuatan cepat harga terjangkau kualitas terbaik"
+  }
+]

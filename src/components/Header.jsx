@@ -135,7 +135,7 @@ function Header() {
 
           <button 
             onClick={() => {
-              const message = "Halo Admin PCB Elmech, saya tertarik dengan jasa cetak PCB Anda. Bisa bantu saya untuk konsultasi mengenai desain dan biayanya?";
+              const message = "Halo Admin PCB, saya tertarik dengan jasa cetak PCB Anda. Bisa bantu saya untuk konsultasi mengenai desain dan biayanya?";
               const phoneNumber = "6289526132900";
               const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
               

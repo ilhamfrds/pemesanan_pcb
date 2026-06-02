@@ -1,14 +1,14 @@
 
 const HARGA_PCB = {
-  'fyber single layer': 375,
-  'fyber double layer': 450,
-  'pertinak': 325
+  'fyber single layer': 400,
+  'fyber double layer': 475,
+  'pertinak': 350
 };
 
 const HARGA_MASKING = {
-  'sisi atas': 60,
-  'sisi bawah': 60,
-  'dua sisi': 120,
+  'sisi atas': 150,
+  'sisi bawah': 150,
+  'dua sisi': 300,
   'no masking': 0
 };
 
@@ -43,8 +43,8 @@ export function formatRupiah(angka) {
 export function calculatePrices(formData) {
   const { panjang, lebar, jumlah, jenis_pcb, layer_masking, prioritas } = formData;
 
-  const p = parseFloat(panjang) || 0;
-  const l = parseFloat(lebar) || 0;
+  const p = Math.ceil(parseFloat(panjang) / 10) * 10 || 0;
+  const l = Math.ceil(parseFloat(lebar) / 10) * 10 || 0;
   const j = parseInt(jumlah) || 0;
 
   const luasMM = p * l;
@@ -59,11 +59,11 @@ export function calculatePrices(formData) {
   let totalLuas = pMeter * lMeter * j;
   if (totalLuas < 100) totalLuas = 100;
 
-  const jumlah_kalkir = ((pMeter * lMeter) / LUAS_A4) * j * (KALKIR_PCB[jenis_pcb] + KALKIR_MASKING[layer_masking]);
+  const jumlah_kalkir = ((pMeter * lMeter) / LUAS_A4) * (KALKIR_PCB[jenis_pcb] + KALKIR_MASKING[layer_masking]);
   const jumlahKalkirBulat = Math.ceil(jumlah_kalkir);
 
   const totalHarga = bulatkanKeRibuan((HARGA_PCB[jenis_pcb] + HARGA_MASKING[layer_masking]) * totalLuas);
-  const hargaKalkir = bulatkanKeRibuan(jumlahKalkirBulat * 5000);
+  const hargaKalkir = bulatkanKeRibuan(jumlahKalkirBulat * 7000);
 
   let hargaPrioritas = 0;
   if (prioritas === "urgent") {

@@ -8,8 +8,18 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold text-blue-600">PCB<span className="text-gray-800">Elmech</span></a>
+            <a href="#" className="flex items-center">
+              <img 
+                src="/logo.png" 
+                alt="IDEA PCB" 
+                className="h-24 w-auto"
+              />
+            </a>
           </div>
+
+          {/* <div className="flex-shrink-0">
+            <a href="#" className="text-2xl font-bold text-blue-600">IDEA<span className="text-gray-800">PCB</span></a>
+          </div> */}
           
           <div className="hidden md:flex md:items-center md:space-x-8">
             <a href="#" className="font-medium text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
